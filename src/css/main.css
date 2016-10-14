@@ -1,0 +1,82 @@
+body,html{  margin: 0;  padding: 0;  font-size: 12px;  font-family: "微软雅黑";  height: 100%;  width: 100%;  }
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+a:focus{text-decoration: none;}
+ul,li{list-style: none;}
+#wrapper{  height: 100%;  width: 100%;  overflow-y: hidden; position: relative;}
+
+/* 菜单 开始 */
+.left-wrapper{  float: left; height: 100%; width: 224px;  z-index: 9999;}
+.left-wrapper>nav{height: 100%;}
+.left-wrapperX{display: none;}
+.left-wrapperX>nav{height: 100%;}
+
+.sidebar-collapse{  display: block;  height: 100%;  overflow-x: hidden;  background: #122b40;  }
+.sidebar-collapse ul>li a{  color: azure;  }
+.sidebar-collapse ul>li a:focus{  background-color: transparent;  color: #dca7a7;  }
+.sidebar-collapse ul li a:hover{  background-color: #1b6d85;  }
+
+.nav-dropdown-menu a span:last-child{  position: absolute;  right: 20px;  }
+.nav-dropdown-menu ul li a{  padding:6px 0 6px 40px;  }
+.nav-dropdown-menud{  border-left: 4px solid #2aabd2;  border-radius: 2px;  }
+.nav-dropdown-menud ul{  display: none;  }
+
+.profile-element{  height: 147px;  background-color: #2b669a;  position: relative;  }
+.profile-element>span{  display: block; position: absolute;  top:30px;  left:30px;  }
+.profile-element img{  width: 75px;  height: 75px;  }
+.profile-element>a{  position: absolute;  top:110px;  left:30px;  text-decoration: none;  }
+.profile-element a:hover{  background-color: #2b669a;  text-decoration: none;  }
+.profile-element a span{  text-align: center;  }
+.profile-element a span:first-child{  display: block;  }
+.profile-element ul li a {  color: #000 ;  }
+.profile-element ul li a:hover {  background-color: #c7ddef;  }
+/* 菜单 结束 */
+
+/* 右侧布局 开始 */
+#right-wrapper{  height: 100%;  width: 100%;}
+.right-wrapper{padding-left: 224px;}
+.right-wrapperX{padding-left: 0px;}
+#right-wrapper-loadding{padding:0;zoom:1;height: 2px;width:100%;background-color: #b92c28;}
+/* 右侧布局 结束 */
+
+/*   右侧 头部  start*/
+.right-wrapper-top{ height: 48px;  background-color: #ffffff;}
+.right-wrapper-top>a{ margin:8px 0 0 5px;float: left;}
+.right-wrapper-top>div{text-align: right;padding: 10px 20px 0 0;}
+.right-wrapper-top>div a{margin-left: 10px;}
+.right-wrapper-top>div a:hover{text-decoration: none;}
+.right-wrapper-top>div a:focus{text-decoration: none;}
+.right-wrapper-top>div a span{margin-top: -18px;}
+.right-wrapper-top>div div{display: inline-block;}
+.dropdown-menu-info{border: none;border-radius: 0 0 5px 5px;top: 38px; }
+/*   右侧 头部 end */
+
+/*   右侧 选项卡 start */
+.right-wrapper-tabs{height: 40px;background-color: #d5d5d5;}
+.right-wrapper-tabs ul li{background-color: #2e6da4; float: left; border-radius: 3px 3px 0 0; padding: 0.9em 4px 0.8em 1.2em ;border-bottom: none;margin: 2px 2px 0 0;}
+.right-wrapper-tabs ul li a{display:inline-block; color: #ffffff; }
+.right-wrapper-tabs ul li a:last-child{ margin-left: 5px;}
+.right-wrapper-tabs ul li a:hover{color: #eeeeee;}
+.fffx{position: absolute;margin: -2px auto 0 auto;  width: 0;height: 0; border: 6px solid #ffffff; display: block; border-left-color: transparent;border-right-color: transparent;border-top-color: transparent;}
+.fffx2{margin-left: 9px;}
+.fffx3{margin-left: 13.5px;}
+.fffx4{margin-left: 18px;}
+.fffx5{margin-left: 22.5px;}
+.fffx6{margin-left: 27px;}
+.fffx7{margin-left: 31.5px;}
+.fffx8{margin-left: 36px;}
+/*   右侧 选项卡 end */
+
+/* 右侧 内容 start */
+.tabs-content{width: 100%;height: 100%; padding-bottom: 140px;}
+/* 右侧 内容 end*/
+
+/* 右侧 底部 start */
+.footer{height: 50px;width: 100%; background: #3c3c3c;padding: 0 0 0 50%;margin-top: -140px;}
+.footer span{color: #ffffff; position: relative;  line-height: 50px;margin-left: -160px;}
+/* 右侧 底部 end*/
+
+@media only screen and (max-width: 600px){
+    .right-wrapper{padding-left: 0px;}
+    #wrapper{  height: 100%;  width: 100%;min-width: 400px;  overflow-y: hidden;}
+}
